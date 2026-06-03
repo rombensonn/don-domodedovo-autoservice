@@ -568,7 +568,7 @@ h3 {
 }
 
 .popular-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .service-tile {
@@ -602,18 +602,6 @@ h3 {
 .service-row strong {
     color: var(--ink-strong);
     white-space: nowrap;
-}
-
-.tile-bottom button,
-.service-row button {
-    min-height: 44px;
-    padding: 0 13px;
-    border: 1px solid rgba(240, 111, 34, 0.32);
-    border-radius: var(--radius);
-    background: rgba(240, 111, 34, 0.09);
-    color: var(--signal-strong);
-    cursor: pointer;
-    font-weight: 900;
 }
 
 .industrial-showcase {
@@ -893,26 +881,37 @@ h3 {
 }
 
 .service-rows {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
     border-top: 1px solid var(--line);
+    background: rgba(245, 239, 230, 0.08);
 }
 
 .service-row {
-    min-height: 64px;
+    min-height: 112px;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto auto;
-    align-items: center;
-    gap: 14px;
-    padding: 11px 18px;
-    border-top: 1px solid rgba(245, 239, 230, 0.08);
-}
-
-.service-row:first-child {
-    border-top: 0;
+    align-content: space-between;
+    gap: 16px;
+    padding: 16px 18px;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.026), rgba(255, 255, 255, 0.01)),
+        #181612;
 }
 
 .service-row span {
     min-width: 0;
     color: var(--ink);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.32;
+}
+
+.service-row strong {
+    color: var(--signal-strong);
+    font-size: 15px;
+    font-weight: 900;
+    white-space: normal;
 }
 
 .empty-state {
@@ -1255,8 +1254,6 @@ address {
     .feature-list li,
     .price-group,
     .chip,
-    .tile-bottom button,
-    .service-row button,
     .intent-card a,
     .intent-card button,
     .text-link,
@@ -1292,8 +1289,7 @@ address {
     .service-tile:hover,
     .process-step:hover,
     .review-card:hover,
-    .feature-list li:hover,
-    .price-group:hover {
+    .feature-list li:hover {
         transform: translateY(-4px);
         border-color: rgba(240, 111, 34, 0.34);
         box-shadow: 0 22px 58px rgba(0, 0, 0, 0.34);
@@ -1309,10 +1305,6 @@ address {
         transform: scale(1.025);
     }
 
-    .tile-bottom button:hover,
-    .tile-bottom button:focus-visible,
-    .service-row button:hover,
-    .service-row button:focus-visible,
     .chip:hover,
     .chip:focus-visible {
         border-color: var(--signal);
@@ -1408,6 +1400,10 @@ address {
 
     .industrial-warning {
         grid-template-columns: 1fr;
+    }
+
+    .service-rows {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
@@ -1519,14 +1515,12 @@ address {
     }
 
     .service-row {
-        grid-template-columns: 1fr;
-        align-items: start;
-        gap: 8px;
+        min-height: 96px;
         padding: 14px;
     }
 
-    .service-row button {
-        width: 100%;
+    .service-rows {
+        grid-template-columns: 1fr;
     }
 
     .price-group summary {

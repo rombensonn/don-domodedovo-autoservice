@@ -598,7 +598,6 @@ $jsonLd = [
                         <p><?= h($group['need']); ?></p>
                         <div class="tile-bottom">
                             <strong>от <?= h(rub($price)); ?></strong>
-                            <button type="button" data-service-select="<?= h($serviceName); ?>">Записаться</button>
                         </div>
                     </article>
                 <?php endforeach; ?>
@@ -723,7 +722,6 @@ $jsonLd = [
                                 <div class="service-row" data-service-row data-category="<?= h($group['slug']); ?>" data-search="<?= h($name . ' ' . $group['title']); ?>">
                                     <span><?= h($name); ?></span>
                                     <strong>от <?= h(rub((int)$price)); ?></strong>
-                                    <button type="button" data-service-select="<?= h($name); ?>">Выбрать</button>
                                 </div>
                             <?php endforeach; ?>
                         </div>
