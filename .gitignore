@@ -1,0 +1,8 @@
+storage/
+qa/
+*.log
+php-server*.out.log
+php-server*.err.log
+desktop-redesign.png
+mobile-redesign.png
+

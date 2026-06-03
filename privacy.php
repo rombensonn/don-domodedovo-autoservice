@@ -1,0 +1,41 @@
+<?php
+declare(strict_types=1);
+?><!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Политика обработки данных - Автосервис Дон</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="policy-page">
+<main class="section">
+    <div class="container">
+        <p class="eyebrow">Документ сайта</p>
+        <h1>Политика обработки данных</h1>
+        <p>Настоящая политика описывает, какие данные передаются через форму записи на сайте автосервиса «Дон» и для чего они используются.</p>
+
+        <h2>Какие данные собираются</h2>
+        <p>Через форму могут быть переданы имя, телефон, выбранная услуга, сведения об автомобиле и комментарий клиента.</p>
+
+        <h2>Цель обработки</h2>
+        <p>Данные используются только для обратной связи, уточнения задачи, предварительной стоимости и времени визита.</p>
+
+        <h2>Хранение</h2>
+        <p>Заявки сохраняются на сервере сайта. Доступ к ним должен быть ограничен владельцем сайта или ответственным сотрудником.</p>
+
+        <h2>Передача третьим лицам</h2>
+        <p>Данные не передаются третьим лицам, кроме случаев, когда это требуется по закону или необходимо для обработки обращения клиента.</p>
+
+        <h2>Удаление данных</h2>
+        <p>Клиент может запросить удаление своих данных, обратившись по телефону, указанному на сайте.</p>
+
+        <p><a class="btn btn-primary" href="index.php">Вернуться на сайт</a></p>
+    </div>
+</main>
+</body>
+</html>
